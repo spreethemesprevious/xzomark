@@ -1,0 +1,47 @@
+// Team area 1
+.team_area{
+
+}
+.team_member{
+  	border: 1px solid rgb(234, 234, 234);
+  	@include boxshadow(0px, 0px, 0px, 0px, rgba(0, 0, 0, 0), false);
+    height: 290px;
+    padding: 40px;
+    margin-bottom: 30px;
+    border-radius: 20% 15%;
+    text-align: center;
+    @include transition(all, .3s, ease-in-out);
+    &:hover{
+    	@include boxshadow(0px, 0px, 45px, 0px, rgba(76, 85, 196, 0.15), false);
+    }
+    img{
+    	height: 120px;
+    	width: auto;
+    	max-width: 200%;
+    	border-radius: 50%;
+    	margin-bottom: 30px;
+    }
+    h5{ margin-bottom: 10px; }
+    .designation{ font-size: 14px; }
+}
+
+
+
+
+		// Responsive
+
+@media #{$medium_device}{
+
+
+}
+@media #{$tab_device}{
+    .team_area .common_block{ margin-bottom: 30px; }
+	
+}
+@media #{$small_mobile}{
+
+
+}
+@media #{$large_mobile}{
+	
+}

@@ -1,0 +1,223 @@
+.simple_clean {
+  background-color: $brand_alt;
+  padding-top: 120px;
+}
+.footer_top {
+  .f_widget_1 {
+    margin-right: 40px;
+    h4 {
+      margin-bottom: 25px;
+    }
+    p {
+      line-height: 1.5;
+      margin-bottom: 25px;
+    }
+    .social_link {
+      li {
+        margin-right: 10px;
+        display: inline-block;
+        a {
+          font-size: 0;
+        }
+        i {
+          font-size: 16px;
+          display: inline-block;
+          padding: 18px;
+          border-radius: 4px;
+          background: none;
+          border: 1px solid #fff;
+          @include transition(all, 0.3s, ease-in-out);
+          color: #fff;
+          box-shadow: 0px 0px 25px 0px rgba(252, 128, 42, 0.12);
+        }
+        i.ti-facebook {
+          background: $facebook;
+          &:hover {
+            color: $facebook;
+            background: #fff;
+          }
+        }
+        i.ti-vimeo-alt {
+          background: $vimeo;
+          &:hover {
+            color: $vimeo;
+            background: #fff;
+          }
+        }
+        i.ti-twitter-alt {
+          background: $twitter;
+          &:hover {
+            color: $twitter;
+            background: #fff;
+          }
+        }
+        i.ti-pinterest {
+          background: $pinterest;
+          &:hover {
+            color: $pinterest;
+            background: #fff;
+          }
+        }
+      }
+    }
+  }
+  .f_widget_4,
+  .f_widget_3,
+  .f_widget_2 {
+    text-align: left;
+    h4 {
+      margin-bottom: 25px;
+    }
+    ul {
+      li {
+        display: block;
+        margin-bottom: 20px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+        a {
+          display: inline-block;
+          color: $text;
+          font-size: 16px;
+          @include body_font(400);
+          @include transition(all, 0.2s, ease-in-out);
+          &:hover {
+            margin-left: 5px;
+            opacity: 0.5;
+          }
+        }
+      }
+    }
+  }
+}
+.footer_bottom {
+  background-color: rgba($brand, 0.05);
+  height: 50px;
+  position: relative;
+  margin-top: 120px;
+  .copy_right_text {
+    p {
+      font-size: 16px;
+      color: $heading;
+    }
+  }
+}
+
+// Responsive
+@media #{$medium_device} {
+}
+@media #{$tab_device} {
+  .simple_clean {
+    padding-top: 60px;
+  }
+  .footer_top {
+    .f_widget_1 {
+      margin: 0;
+      h4 {
+        font-size: 20px;
+        margin-bottom: 20px;
+      }
+      p {
+        font-size: 14px;
+        margin-bottom: 20px;
+      }
+      .social_link {
+        margin-top: 15px;
+        margin-bottom: 0px;
+        li {
+          margin-right: 5px;
+          i {
+            padding: 15px;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+    .f_widget_4,
+    .f_widget_3,
+    .f_widget_2 {
+      h4 {
+        margin-bottom: 20px;
+        font-size: 20px;
+        text-align: left;
+      }
+      ul {
+        li {
+          margin-bottom: 20px;
+          a {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+  .footer_bottom {
+    margin-top: 50px;
+  }
+}
+@media #{$small_mobile} {
+  .simple_clean {
+    padding-top: 50px;
+  }
+  .footer_top {
+    .f_widget_1 {
+      margin: 0;
+      text-align: center;
+      margin-bottom: 35px;
+      h4 {
+        font-size: 20px;
+        margin-bottom: 15px;
+      }
+      p {
+        font-size: 14px;
+        margin-bottom: 20px;
+      }
+      .social_link {
+        margin-top: 15px;
+        margin-bottom: 0px;
+        li {
+          margin-right: 5px;
+          i {
+            padding: 15px;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+    .f_widget_4,
+    .f_widget_3,
+    .f_widget_2 {
+      margin-bottom: 35px;
+      text-align: center;
+      h4 {
+        margin-bottom: 15px;
+        font-size: 20px;
+      }
+      ul {
+        li {
+          margin-bottom: 15px;
+          a {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+  .footer_bottom {
+    margin-top: 0px;
+    .copy_right_text {
+      p {
+        font-size: 12px;
+      }
+    }
+  }
+}
+@media #{$large_mobile} {
+  .footer_bottom {
+    .copy_right_text {
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+}

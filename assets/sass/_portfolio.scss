@@ -1,0 +1,172 @@
+// Portfolio
+.project_area {
+  .btn {
+    margin-top: 20px;
+  }
+}
+.single_portfolio {
+  position: relative;
+  z-index: 1;
+  &:hover {
+    .boxed_btn {
+      bottom: calc(50% + 20px);
+      right: calc(50% - 30px);
+    }
+    .details {
+      p,
+      h4 {
+        text-align: center;
+      }
+      h4 {
+        text-align: center;
+        color: $brand;
+      }
+    }
+    .portfolio_img:after {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+  .portfolio_img {
+    overflow: hidden;
+    height: 300px;
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+    &:after {
+      opacity: 0;
+      visibility: hidden;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      content: "";
+      position: absolute;
+      @include transition(all, 0.3s, ease-in-out);
+      background: rgba($brand, 0.7);
+    }
+  }
+  .details {
+    display: flex;
+    flex-direction: column;
+    p {
+      margin-top: 35px;
+      @include transition(all, 0.3s, ease-in-out);
+    }
+
+    h4 {
+      margin-top: 25px;
+      @include transition(all, 0.3s, ease-in-out);
+    }
+  }
+  .boxed_btn {
+    position: absolute;
+    z-index: 2;
+    bottom: 20px;
+    right: 5px;
+    display: inline-block;
+    background-color: $brand_alt;
+    font-size: 16px;
+    color: $text;
+    border-radius: 50%;
+    font-weight: 700;
+    padding: 20px;
+    @include transition(all, 0.3s, ease-in-out);
+    &:hover {
+      background: #fff;
+      color: $brand;
+    }
+  }
+}
+
+// project details
+.project_details_area {
+  .project_details {
+    .defination:last-of-type {
+      margin: 0;
+    }
+  }
+}
+.project_info {
+  background: $brand_alt;
+  padding-bottom: 30px;
+  border-radius: 5px;
+  overflow: hidden;
+  h3 {
+    padding: 30px;
+    background: rgba($brand, 0.2);
+  }
+  .single_info {
+    padding: 25px 0 0 30px;
+    h4 {
+      font-size: 22px;
+      margin-bottom: 5px;
+    }
+  }
+}
+
+// Responsive
+@media #{$medium_device} {
+}
+@media #{$tab_device} {
+  .project_info {
+    h3 {
+      padding: 20px;
+    }
+    .single_info {
+      padding: 20px 0 0 20px;
+      h4 {
+        margin: 0;
+      }
+    }
+  }
+}
+@media #{$small_mobile} {
+  .single_portfolio {
+    position: relative;
+    z-index: 1;
+    &:hover {
+      .boxed_btn {
+        bottom: calc(50% + 20px);
+        right: calc(50% - 30px);
+      }
+      .details {
+        p,
+        h4 {
+          text-align: center;
+        }
+        h4 {
+          text-align: center;
+          color: $brand;
+        }
+      }
+      .portfolio_img:after {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+    .portfolio_img {
+      height: 250px;
+    }
+    .details {
+      p {
+        margin-top: 25px;
+      }
+      h4 {
+        margin-top: 10px;
+      }
+    }
+    .boxed_btn {
+      bottom: 5px;
+      right: 5px;
+    }
+  }
+  .project_info {
+    margin-top: 30px;
+    h3 {
+      padding: 15px;
+    }
+  }
+}
+@media #{$large_mobile} {
+}

@@ -1,0 +1,50 @@
+
+ // Testimonial area 1
+.testimonial_area{
+	i{
+	    font-size: 45px;
+	    margin-bottom: 20px; 
+	}
+
+	p {
+	    font-size: 17px;
+	    line-height: 1.5; 
+	    margin-top: 20px;
+	}
+	h5{
+	    margin: 20px 0 10px; 
+	}
+	.designation {
+	    font-size: 14px; 
+		margin: 0;
+	}
+	.swiper-pagination {
+	    text-align: right;
+	    .swiper-pagination-bullet {
+		    margin: 0 2px;
+		    padding: 6px;
+		    background: $brand;
+		}
+	}
+
+	
+
+}
+
+
+
+
+
+@media #{$medium_device}{
+
+}
+@media #{$tab_device}{
+
+}
+@media #{$small_mobile}{
+
+}
+@media #{$large_mobile}{
+	
+}
+

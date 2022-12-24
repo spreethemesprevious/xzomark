@@ -1,0 +1,35 @@
+// sass responsive
+$medium_device: "only screen and (min-width: 992px) and (max-width: 1200px)";
+$tab_device: "only screen and (min-width: 768px) and (max-width: 991px)";
+$tab_device_below: "only screen and (min-width: 320px) and (max-width: 991px)";
+$small_mobile: "(max-width: 767px)";
+$large_mobile: "only screen and (min-width: 480px) and (max-width: 767px)";
+$mobile320To480px: "only screen and (min-width: 320px) and (max-width: 480px)";
+
+// Body Background
+
+// font color
+$text: #5b5c69;
+$heading: #222222;
+//branding
+$brand: #4c55c4; //sky blue
+$brand_alt: #f3f4fc;
+
+$green: #2cd63c; // green
+$yellow: #ffcc02; // orange
+
+// Social Media Color:
+$facebook: #3b5998;
+$flickr: #ff0084;
+$googleplus: #dd4b39;
+$linkedin: #00a0dc;
+$dribbble: #ea4c89;
+$medium: #00ab6c;
+$instagram: #517fa4;
+$pinterest: #bd081c;
+$periscope: #40a4c4;
+$tumblr: #35465c;
+$twitter: #1da1f2;
+$vimeo: #1ab7ea;
+$youtube: #ff0000;
+$yahoo: #410093;

@@ -1,0 +1,37 @@
+	// Client 1
+.client_area{ 
+	height: auto;
+	.client_img{
+	 	height: 110px;
+		width: 100%;
+		background: #fff;
+		a {	
+			font-size: 0;
+			text-align: center;
+			filter: opacity(.5) grayscale(1);
+			@include transition(all, .3s, ease-in-out);
+			img{ 
+				width: 70%; 
+			}
+			&:hover{ 
+			    filter: opacity(1) grayscale(0); 
+			}
+		}
+	}
+}
+
+
+
+// Responsive
+@media #{$medium_device}{
+
+}
+@media #{$tab_device}{
+
+}
+@media #{$small_mobile}{
+
+}
+@media #{$large_mobile}{
+
+}

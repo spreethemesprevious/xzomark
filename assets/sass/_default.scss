@@ -1,0 +1,139 @@
+/* Base CSS */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+}
+
+ol,
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.form-group {
+  margin: 0;
+}
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="tel"],
+input[type="password"],
+textarea,
+select {
+  background: #fff;
+  padding: 10px;
+}
+// All input focus outline , box-shadow remove
+a:focus,
+input[type="button"]:focus,
+input[type="submit"]:focus,
+button:focus,
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="tel"]:focus,
+input[type="password"]:focus,
+select:focus,
+textarea:focus,
+.form-control:focus,
+.btn:focus {
+  outline: none;
+  box-shadow: none;
+  border: none;
+}
+a:hover,
+button:hover {
+  text-decoration: none;
+}
+img {
+  max-width: 200%;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-style: normal;
+  color: $heading;
+  @include heading_font(700);
+}
+p {
+  color: $text;
+  line-height: 1.5;
+}
+
+html {
+  position: relative;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+body {
+  line-height: 1;
+  color: #000;
+  background: #fff;
+  overflow-x: hidden;
+  position: relative;
+  @include body_font(400);
+}
